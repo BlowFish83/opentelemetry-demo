@@ -704,6 +704,10 @@ services:
     logging: *logging
     environment:
       - ENVOY_PORT
+      - CORALOGIX_DOMAIN
+      - CORALOGIX_APP_NAME
+      - CORALOGIX_SUBSYS_NAME
+      - CORALOGIX_PRIVATE_KEY
 
   # Prometheus
   prometheus:
@@ -885,3 +889,6 @@ services:
       retries: 60
     ports:
       - 5432
+
+
+
